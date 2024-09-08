@@ -1,0 +1,124 @@
+main {
+    grid-row: 1 / -2;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__section {
+    height: 80vh;
+    background: url(../imagens/main/banner.png) no-repeat center / cover;
+}
+
+.banner_section {
+    width: 80vw;
+    height: 18vh;
+    margin: 3rem auto;
+    background: url(../imagens/main/banner2.png) no-repeat center / cover;
+    border-radius: 7px;
+}
+
+.search__div {
+    margin: 1rem auto auto;
+    display: flex;
+    align-items: center;
+    border: 1px solid #bebdbd;
+    border-radius: 50px;
+    width: 30rem;
+    height: 3rem;
+    padding: 0 .5rem;
+    box-shadow: 1px 1px 3px #dddcdc;
+}
+
+.search__div input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+.main__section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 40rem;
+    max-width: 70rem;
+    margin: 3rem auto 5rem;
+    gap: 1rem;
+}
+
+.section__div {
+    border-radius: 8px;
+    box-shadow: 1px 1px 8px #b3b1b1;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    cursor: pointer;
+}
+
+.section__div:hover {
+    transform: scale(1.02);
+}
+
+.section__div img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.div__intern {
+    padding: 1rem;
+    height: calc(100% - 300px);
+    overflow: hidden;
+}
+
+.div__intern h2{
+    color: #7523da;
+    margin-bottom: 1rem;
+}
+
+.div__intern p {
+    text-align: justify;
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+
+@media only screen and (max-width: 1310px) {
+    .main__section{
+        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 60rem;
+    }
+}
+@media only screen and (max-width: 1025px) {
+    .header__section{
+        height: 60vh;
+    }
+    .banner_section{
+        height: 12vh;
+    }
+    .main__section{
+        grid-template-columns: 1fr 1fr;
+        max-width: 40rem;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .header__section{
+        height: 50vh;
+    }
+    .banner_section{
+        height: 10vh;
+    }
+    .main__section{
+        grid-template-columns: 1fr;
+        max-width: 30rem;
+    }
+}
+@media only screen and (max-width: 520px) {
+    .main__section{
+        grid-template-columns: 1fr;
+        max-width: 30rem;
+        margin-inline: 1rem;
+    }
+    .search__div {
+        width: 90vw;
+    }
+}

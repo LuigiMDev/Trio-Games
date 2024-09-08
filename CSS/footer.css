@@ -1,0 +1,55 @@
+footer {
+    grid-row: -2 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-image: linear-gradient(to right, #2C1E44, #482D6A, #2C1E44);
+}
+
+.footer__h1 {
+    color: #f3f3f3; /* Define a cor do texto para um tom claro */
+    font-family: "Handjet", sans-serif; /* Usa a fonte 'Handjet' */
+    letter-spacing: .25rem; /* Adiciona espaçamento entre as letras */
+    border: 2px solid #f3f3f3;
+    padding: .2rem .5rem;
+    border-radius: 5px;
+    font-size: 1.5rem;
+}
+
+.footer__a__h1 {
+    text-decoration: none; /* Remove a sublinha dos links */
+}
+
+.footer__ul {
+    display: flex; /* Usa flexbox para alinhar os itens */
+    font-size: 1rem; /* Define o tamanho da fonte */
+    gap: 1rem; /* Adiciona um espaçamento entre os itens */
+}
+
+/* Estilos para cada item da lista (li) dentro da ul */
+.footer__ul li {
+    list-style: none; /* Remove os marcadores padrão da lista */
+    user-select: none; /* Impede que o texto seja selecionado pelo usuário */
+}
+
+/* Estilos para links dentro da lista (ul) */
+.footer__ul a {
+    text-decoration: none; /* Remove a sublinha dos links */
+    color: #f3f3f3; /* Define a cor dos links */
+}
+
+.footer__icons img {
+    transition: all 0.2s ease-in-out; /* Aplica uma transição suave a todas as propriedades */
+}
+
+
+/* Efeito de zoom ao passar o mouse sobre as imagens */
+.footer__icons img:hover {
+    transform: scale(1.15); /* Aumenta a escala da imagem para 115% */
+}
+
+.footer_p {
+    color: #f3f3f3;
+}
